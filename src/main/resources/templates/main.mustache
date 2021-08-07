@@ -5,8 +5,26 @@
     <title>Main</title>
 </head>
 <body>
+<form action="" method="post">
+    <input type="text" name="text" placeholder="Введите собщение...">
+    <input type="text" name="tag" placeholder="Тэг">
+    <button type="submit"> Добавить</button>
+</form>
+<form action="filter" method="post">
+    <input type="text" name="filter">
+    <button type="submit">Найти</button>
+</form>
     <h1>
-        {{some}}
+        Список собщенний
     </h1>
+    <div>
+        {{#messages}}
+            <div>
+                <b>{{id}}</b>
+                <span>{{text}}</span>
+                <i>{{tag}}</i>
+            </div>
+        {{/messages}}
+    </div>
 </body>
 </html>
