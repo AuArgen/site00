@@ -1,4 +1,4 @@
-package com.example.site00;
+package com.example.site00.controller;
 import com.example.site00.domain.Message;
 import com.example.site00.repos.MessageRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
     @Autowired
     private MessageRepo messageRepo;
     @GetMapping("/")
