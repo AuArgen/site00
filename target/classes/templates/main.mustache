@@ -20,7 +20,7 @@
 <form action="filter" method="post">
     <input type="text" name="filter">
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" id="">
-  
+
     <button type="submit">Найти</button>
 </form>
     <h1>
@@ -32,6 +32,7 @@
                 <b>{{id}}</b>
                 <span>{{text}}</span>
                 <i>{{tag}}</i>
+                <strong>{{authorName}}</strong>
             </div>
         {{/messages}}
     </div>
